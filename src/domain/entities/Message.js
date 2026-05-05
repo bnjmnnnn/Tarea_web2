@@ -1,6 +1,6 @@
 class Message {
-  constructor(text) {
-    this.text = text;
+  constructor(nombre) {
+    this.nombre = nombre;
   }
 }
 module.exports = Message;
