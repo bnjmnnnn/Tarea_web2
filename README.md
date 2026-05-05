@@ -14,25 +14,31 @@ El proyecto está construido usando **Node.js y TypeScript** aplicando los princ
 ### Estructura de Carpetas
 
 ```text
-src/
-├── domain/                    # CAPA 1: Reglas de Negocio Centrales
-│   ├── entities/              # Modelos puros del negocio sin dependencias (ej. Message.ts)
-│   └── repositories/          # Interfaces (contratos abstractos) para interactuar con la base de datos
+TAREA/
+├── docs/
+│   └── exito.png
 │
-├── application/               # CAPA 2: Casos de Uso
-│   └── use-cases/             # Lógica específica de la app. Orquestan entidades y repositorios (ej. HolaMundoUseCase.ts)
-│
-├── infrastructure/            # CAPA 3: Detalles Técnicos (Adaptadores)
-│   ├── repositories/          # Implementaciones reales de las bases de datos (SQL, MongoDB, etc.)
-│   └── http/                  
-│       ├── controllers/       # Reciben las peticiones (Request) y devuelven respuestas (Response)
-│       └── routes/            # Definición de las rutas web (Endpoints)
-│
-├── main/                      # CAPA 4: Root / Configuración
-│   └── config/                # Instancia y conecta todas las capas. Configuración del servidor y variables de entorno
-│
-└── index.ts                   # Archivo de entrada de la aplicación
-```
+└── src/
+    ├── application/                    # CAPA: Casos de Uso
+    │   ├── ports/
+    │   │   └── IMessageRepository.ts  ← Contrato/interfaz del repositorio
+    │   └── use-cases/
+    │       └── holaMundo.ts           ← Caso de uso principal
+    │
+    ├── domain/                         # CAPA: Entidades del Negocio
+    │   └── entities/
+    │       └── Message.ts             ← Entidad pura sin dependencias
+    │
+    ├── infrastructure/                 # CAPA: Detalles Técnicos
+    │   └── server/
+    │       └── app.ts                 ← Configuración del servidor Express
+    │
+    ├── interfaces/                     # CAPA: Adaptadores HTTP
+    │   └── http/
+    │       └── controllers/
+    │           └── holaMundoController.ts  ← Recibe Request, devuelve Response
+    │
+    └── index.ts                        ← Punto de entrada de la aplicación
 
 ### ¿Por qué esta estructura?
 1. **Independencia de Frameworks:** La arquitectura no depende de si usamos Express, Fastify, etc.
