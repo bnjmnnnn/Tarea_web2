@@ -1,7 +1,7 @@
 royecto Tarea Web 2 - Clean Architecture
 
 ## 👥 Equipo y Plan de Acción
-* **Benjamín Fernández:** Creó el README.md y la capa `domain` inicial.
+* **Benjamín Fernández:** Creó el README.md y la capa `domain` inicial como también infraestructure.
 * **Matías Díaz:** Inicializó configuraciones (TypeScript, package.json) y creó la capa `application` (Casos de Uso).
 * **Bastián Pizarro:** Creó la capa de adaptadores/interfaces HTTP (Controladores y Rutas).
 
