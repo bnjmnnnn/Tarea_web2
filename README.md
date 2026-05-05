@@ -1,4 +1,4 @@
-royecto Tarea Web 2 - Clean Architecture
+Proyecto Tarea Web 2 - Clean Architecture
 
 ## 👥 Equipo y Plan de Acción
 * **Benjamín Fernández:** Creó el README.md y la capa `domain` inicial como también infraestructure.
