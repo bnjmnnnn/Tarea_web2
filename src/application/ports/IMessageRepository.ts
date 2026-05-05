@@ -1,6 +1,6 @@
-// application/ports/IMessageRepository.js
+// application/ports/IMessageRepository.ts
 
-import Message from "../../domain/entities/message";
+import Message from "../../domain/entities/Message";
 
 interface IMessageRepository {
     save(message: Message): Promise<void>;

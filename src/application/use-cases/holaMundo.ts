@@ -11,11 +11,11 @@ class diHolaMundo {
     }
 
     //3. El Metodo Execute
-    async execute({nombre}! : {nombre: string}): Promise<Message> {
+    async execute({nombre}: {nombre: string}): Promise<Message> {
         const message = new Message(`Hola ${nombre}! Bienvenido a Clean Architecture!`);
         return message;
     }
 }
 
 // 4. Exportar la Clase
-export default = diHolaMundo;
+export default diHolaMundo;
