@@ -48,6 +48,40 @@ src/
 * [Node.js](https://nodejs.org/) instalado.
 * TypeScript instalado a nivel de proyecto (`npm install typescript @types/node --save-dev`).
 
+---
+
+## ✅ Ejecución del Proyecto
+
+### Instalar dependencias:
+```bash
+npm install
+```
+
+### Ejecutar el servidor:
+```bash
+node src/index.js
+```
+
+El servidor se iniciará en `http://localhost:3000`
+
+### Prueba exitosa:
+Accede a la siguiente URL en tu navegador o cliente HTTP:
+```
+http://localhost:3000/?nombre=TuNombre
+```
+
+**Respuesta esperada:**
+```json
+{
+  "success": true,
+  "data": {
+    "nombre": "Hola TuNombre! Bienvenido a Clean Architecture!"
+  }
+}
+```
+
+![Respuesta exitosa del servidor](./docs/exito.png)
+
 ### 2. Instalación
 Dentro de la carpeta del proyecto instala las dependencias:
 ```bash
