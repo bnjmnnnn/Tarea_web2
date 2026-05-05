@@ -2,15 +2,15 @@
 // El controller no debe tener lógica de negocio, solo delega
 const DiHolaMundo = require("../../../application/use-cases/holaMundo");
 
-/**
- * Controller encargado de manejar la petición HTTP para el saludo.
- * 
- * Responsabilidades:
- * - Recibir datos desde la request (req)
- * - Llamar al caso de uso correspondiente
- * - Retornar una respuesta HTTP
- * 
- * No debe contener lógica de negocio (eso va en application/domain)
+/*
+  Controller encargado de manejar la petición HTTP para el saludo.
+  
+  Responsabilidades:
+  - Recibir datos desde la request (req)
+  - Llamar al caso de uso correspondiente
+  - Retornar una respuesta HTTP
+  
+   
  */
 async function holaMundoController(req, res) {
   try {
